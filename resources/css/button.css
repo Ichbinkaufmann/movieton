@@ -1,0 +1,26 @@
+.btn-primary {
+    @apply bg-mtcolor text-white;
+}
+.btn-primary:hover {
+    @apply bg-mtcolorhover text-white;
+}
+
+.btn-warning {
+    @apply bg-yellow-500 text-white;
+}
+
+.btn-danger {
+    @apply bg-red-500 text-white;
+}
+
+.btn-light-outline {
+    @apply text-white border border-white;
+}
+
+.btn-light-outline:hover {
+    @apply text-black border bg-gray-900;
+}
+
+.btn-white-outline {
+    @apply text-black border border-[#F1F1F1];
+}
