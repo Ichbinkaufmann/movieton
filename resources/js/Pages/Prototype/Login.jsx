@@ -22,6 +22,9 @@ export default function Login() {
                             alt=""
                             className="hidden laptopLg:block tablet:block  phoneSm:block phoneLg:block  laptopLg:max-w-[200px] laptopXl:max-w-[200px] tablet:max-w-[200px] phoneSm:max-w-[200px] phoneLg:max-w-[200px]"
                         />
+                        <span className="text-xs text-[#767676]">
+                            Member of AFK Corp.
+                        </span>
                         <div className="my-[70px]">
                             <div className="font-semibold text-[26px] mb-3">
                                 Welcome Back
@@ -57,18 +60,23 @@ export default function Login() {
                                 </div>
                             </div>
                             <div className="grid space-y-[14px] mt-[30px]">
-                                <Button type="button" variant="primary">
-                                    <span className="text-base  font-semibold">
-                                        Start Watching
-                                    </span>
-                                </Button>
+                                <Link href={route("prototype.dashboard")}>
+                                    <Button type="button" variant="primary">
+                                        <span className="text-base  font-semibold">
+                                            Start Watching
+                                        </span>
+                                    </Button>
+                                </Link>
+                                <div className="flex items-center justify-center">
+                                    <p>Don't have an account yet?</p>
+                                </div>
                                 <Link href={route("prototype.register")}>
                                     <Button
                                         type="button"
                                         variant="light-outline"
                                     >
                                         <span className="text-base text-white">
-                                            Create New Account
+                                            Create a New Account
                                         </span>
                                     </Button>
                                 </Link>
