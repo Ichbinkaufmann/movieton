@@ -24,3 +24,7 @@
 .btn-white-outline {
     @apply text-black border border-[#F1F1F1];
 }
+
+.btn-white-outline:hover {
+    @apply text-black border bg-[#f9f9f9] border-[#F1F1F1];
+}

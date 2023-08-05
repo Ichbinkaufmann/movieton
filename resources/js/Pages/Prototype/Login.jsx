@@ -6,7 +6,14 @@ import { Link, Head } from "@inertiajs/react";
 export default function Login() {
     return (
         <>
-            <Head title="Sign in" />
+            <Head>
+                <title>Sign in</title>
+                <link
+                    rel="shortcut icon"
+                    type="image/x-icon"
+                    href="/images/mt-icon-logo.png"
+                />
+            </Head>
             <div className="mx-auto max-w-screen min-h-screen bg-black text-white md:px-10 px-3">
                 <div className="fixed top-[-50px] hidden lg:block">
                     <img

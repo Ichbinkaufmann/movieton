@@ -6,7 +6,14 @@ import { Link, Head } from "@inertiajs/react";
 export default function Register() {
     return (
         <>
-            <Head title="Sign Up" />
+            <Head>
+                <title>Sign Up</title>
+                <link
+                    rel="shortcut icon"
+                    type="image/x-icon"
+                    href="/images/mt-icon-logo.png"
+                />
+            </Head>
             <div className="mx-auto max-w-screen min-h-screen bg-black text-white md:px-10 px-3">
                 <div className="fixed top-[-50px] hidden lg:block">
                     <img

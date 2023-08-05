@@ -18,6 +18,11 @@ export default function Dashboard() {
         <Authenticated>
             <Head>
                 <link
+                    rel="shortcut icon"
+                    type="image/x-icon"
+                    href="/images/mt-icon-logo.png"
+                />
+                <link
                     rel="stylesheet"
                     href="https://unpkg.com/flickity@2/dist/flickity.min.css"
                 />
