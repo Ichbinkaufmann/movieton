@@ -12,6 +12,8 @@ class UserTableSeeder extends Seeder
      */
     public function run(): void
     {
+
+        // create admin user
         $admin = User::create([
             'name' => 'Admin',
             'email' => 'admin.mail@movieton.test',
