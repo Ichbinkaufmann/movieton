@@ -31,7 +31,7 @@ export default function Topbar() {
                     >
                         <img
                             src="/images/avatar.png"
-                            className="rounded-full object-cover w-full"
+                            className="rounded-full object-cover avatarpic w-full"
                             alt=""
                         />
                     </div>
