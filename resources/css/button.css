@@ -28,3 +28,7 @@
 .btn-white-outline:hover {
     @apply text-black border bg-[#f9f9f9] border-[#F1F1F1];
 }
+
+.btn-disabled {
+    @apply text-grey border-gray-500 bg-slate-900;
+}

@@ -18,13 +18,12 @@ export default function Register() {
         };
     }, []);
 
-    const onChange = (event) => {
-        setData(event.target.name, event.target.value);
-    };
-
+    const btnSubmit = document.querySelector(".btn-submit");
+    const btnLoading = document.querySelector(".btn-loading");
     const submit = (e) => {
         e.preventDefault();
-
+        btnLoading.classList.toggle("hidden");
+        btnSubmit.classList.toggle("hidden");
         post(route("register"));
     };
     return (
@@ -151,10 +150,21 @@ export default function Register() {
                                 <Button
                                     type="submit"
                                     variant="primary"
-                                    processing={processing}
+                                    className="btn-submit"
+                                    disabled={processing}
                                 >
                                     <span className="text-base  font-semibold">
                                         Sign Up
+                                    </span>
+                                </Button>
+                                <Button
+                                    type="submit"
+                                    disabled
+                                    variant="warning"
+                                    className="btn-loading btn-disabled hidden"
+                                >
+                                    <span className="text-grey font-semibold">
+                                        Processing
                                     </span>
                                 </Button>
                                 <div className="flex items-center justify-center">
