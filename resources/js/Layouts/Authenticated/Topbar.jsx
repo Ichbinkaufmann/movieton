@@ -1,6 +1,7 @@
 import { useState, useRef } from "react";
+import { Link } from "@inertiajs/react";
 
-export default function Topbar() {
+export default function Topbar({ name }) {
     const [dropdownOpen, setDropdownOpen] = useState(true);
     const dropdownTarget = useRef();
 
@@ -21,7 +22,7 @@ export default function Topbar() {
             />
             <div className="flex items-center gap-4">
                 <span className="text-black text-sm font-medium">
-                    Welcome, Adri Kaufmann
+                    Welcome, {name}
                 </span>
                 {/* Use Avatar */}
                 <div className="collapsible-dropdown flex flex-col gap-2 relative">
@@ -51,12 +52,14 @@ export default function Topbar() {
                         >
                             Settings
                         </a>
-                        <a
-                            href="sign_in.html"
+                        <Link
+                            href={route("logout")}
+                            method="post"
+                            // as="button"
                             className="transition-all hover:bg-sky-100 p-4"
                         >
                             Sign Out
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>
