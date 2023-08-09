@@ -56,3 +56,7 @@
 .box-shadow-black:hover {
     box-shadow: 0 0 11px #ff4136;
 }
+
+.avatarpic {
+    aspect-ratio: 1/1;
+}

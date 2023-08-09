@@ -19,6 +19,7 @@ export default {
                 mtcolor: "#FF4136",
                 mtfocus: "#FB8F78",
                 mtcolorhover: "#DD4524",
+                grey: "#B4B4B4",
                 "gray-1": "#B4B4B4",
                 "gray-2": "#E2E0E0",
                 "form-bg": "#212121",
